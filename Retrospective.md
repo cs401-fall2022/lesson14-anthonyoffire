@@ -28,7 +28,7 @@ No issues learning about TypeScript; the tutorials are pretty straight-forward. 
 
 ## Known issues or Bugs
 
-TODO
+none
 
 ## Sources used
 

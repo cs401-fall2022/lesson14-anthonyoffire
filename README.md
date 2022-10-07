@@ -3,9 +3,8 @@
 ### Week 1
  - Initialized Github Pages site
  - Spent a couple hours reading the linked TypeScript tutorials
- - Started gathering information
+ - Finished examples
    
 
 ## TODO
  - CSS
- - finish putting together information
