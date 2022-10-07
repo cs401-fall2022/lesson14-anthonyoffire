@@ -34,7 +34,7 @@
   </section>
   <section>
     <h2>What Type Is It?</h2>
-    <section class="card">
+    <div class="card">
       <h3>Type Inference</h3>
       <p>TypeScript knows this is a string based on the assigned value</p>
       <div class="code">let myString = "A string, I am"</div>
@@ -46,13 +46,14 @@
         };
         </p>
       </div>
-    </section>
-    <section class="card">
+    </div>
+    <div class="card">
       <h3>Explicitly Stating Type</h3>
       <p>To define an explicit type without inference, state it after the variable name.</p>
       <div class="code">
         <p>let mySecondString: string = "Definitely a string"</p>
       </div>
+      <p>Objects:</p>
       <div class="code">
         <p>
         interface Object {<br>
@@ -65,13 +66,78 @@
         };
         </p>
       </div>
-    </section>
+      <p>Function parameters and return types:</p>
+      <div class="code">
+        <p>
+          function setColor(color: string){<br>
+            &emsp;...<br>
+          }<br>
+          function getColor(): string {<br>
+            &emsp;...<br>
+          }<br>
+        </p>
+      </div>
+      <h3>Using Multiple Possible Types:</h3>
+      <div class="code">
+        function add(num1: number | bigint, num2: number | bigint){<br>
+          &emsp;...<br>
+        }
+      </div>
+    </div>
   </section>
   <section>
     <h2>Object Compatibility</h2>
+    <div class="card">
+      <p>Objects are compatible as long as they hold the same elements:</p>
+      <div class="code">
+        <p>
+          interface Car {<br>
+            &emsp;make: string;<br>
+            &emsp;model: string;<br>
+          }<br>
+          class Vehicle {<br>
+            &emsp;make: string;<br>
+            &emsp;model: string;<br>
+            <br>
+            &emsp;constructor(make: string, model: string) {<br>
+              &emsp;&emsp;this.make = make;<br>
+              &emsp;&emsp;this.model = model;<br>
+              &emsp;}<br>
+            }
+            <br>
+            const car: Car = new Vehicle("Nissan", "240sx");
+        </p>
+      </div>
+    </div>
   </section>
   <section>
-    <h2>The 'any' Type</h2>
+    <h2>Additional Primitives</h2>
+    <p>TypeScript adds a few new primitives, in addition to the ones that already exist in JavaScript. </p>
+    <div class="card">
+      <h3>The 'any' Type</h3>
+      <p>TypeScript adds a type called 'any', which means all types are allowed:</p>
+      <div class="code">
+        
+      </div>
+      <h3>The 'never' Type</h3>
+      <p>TypeScript adds a type called 'never', which means the specified type is not allowed:</p>
+      <div class="code">
+        
+      </div>
+      <h3>The 'unknown' Type</h3>
+      <p>TypeScript adds a type called 'unknown', which means the caller must specify the type:</p>
+      <div class="code">
+        
+      </div>
+      <h3>The 'void' Type</h3>
+      <p>
+        TypeScript adds a type called 'void', which is for functions that return 
+        undefined, or have no return type:
+      </p>
+      <div class="code">
+        
+      </div>
+    </div>
   </section>
   <section>
     <h2>Making Your Own Types</h2>
