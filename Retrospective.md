@@ -1,7 +1,7 @@
 # Retrospective
 
-- name: Jane Doe
-- email: janedoe@u.boisestate.edu
+- name: Anthony Baird
+- email: anthonybaird@u.boisestate.edu
 
 ## Instructions
 
@@ -32,4 +32,4 @@ TODO
 
 ## Sources used
 
-TODO
+The tutorials linked in the assignment.
