@@ -4,10 +4,8 @@
  - Initialized Github Pages site
  - Spent a couple hours reading the linked TypeScript tutorials
  - Started gathering information
- 
- ## Thoughts 
- ### Week 1 
-  
+   
 
 ## TODO
-### Introduction
+ - CSS
+ - finish putting together information
