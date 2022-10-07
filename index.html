@@ -3,22 +3,80 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Typescript</title>
+  <title>Typescript Tutorial</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Future links -->
   <!--<link rel="stylesheet" href="/css/style.css">-->
-  <!--<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.1.css">-->
+  
 </head>
 
 <body>
+  <nav></nav>
+  <h1>TypeScript Tutorial</h1>
+  <section id="intro">
+    <h2>Introduction</h2>
+    <p>
+      In this tutorial, we go over some TypeScript basics 
+      for a transitioning JavaScript programmer.
+    </p>
+  </section>
+  <section id="why">
+    <h2>Why switch to TypeScript?</h2>
+    <p>
+      TypeScript provides several benefits over JavaScript:
+    </p>
+    <ul>
+      <li>Static Analysis: Seeing errors before you even compile.</li>
+      <li>Code Suggestion: Accurate auto-complete functionality.</li>
+      <li>JavaScript is TypeScript: TypeScript is just JavaScript with a few extra features.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>What Type Is It?</h2>
+    <section class="card">
+      <h3>Type Inference</h3>
+      <p>TypeScript knows this is a string based on the assigned value</p>
+      <div class="code">let myString = "A string, I am"</div>
+      <div class="code">
+        <p>
+        const object = {<br>
+          &emsp;id: 1,<br>
+          &emsp;color: "blue",<br>
+        };
+        </p>
+      </div>
+    </section>
+    <section class="card">
+      <h3>Explicitly Stating Type</h3>
+      <p>To define an explicit type without inference, state it after the variable name.</p>
+      <div class="code">
+        <p>let mySecondString: string = "Definitely a string"</p>
+      </div>
+      <div class="code">
+        <p>
+        interface Object {<br>
+          &emsp;id: number;<br>
+          &emsp;color: string;<br>
+        }<br>
+        const obj: Object = {<br>
+          &emsp;id: 2,<br>
+          &emsp;color: "green",<br>
+        };
+        </p>
+      </div>
+    </section>
+  </section>
+  <section>
+    <h2>Object Compatibility</h2>
+  </section>
+  <section>
+    <h2>The 'any' Type</h2>
+  </section>
+  <section>
+    <h2>Making Your Own Types</h2>
+  </section>
   
-  <!-- Future testing code -->
-  <!-- <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-  <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
-  <script src="js/test.js"></script>
-  -->
 </body>
 
 </html>
