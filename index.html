@@ -113,10 +113,10 @@
   <section>
     <h2>Additional Primitives</h2>
     <p>TypeScript adds a few new primitives, in addition to the ones that already exist in JavaScript. </p>
+    <h3>The 'any' Type</h3>
     <div class="card">
-      <h3>The 'any' Type</h3>
       <p>TypeScript adds a type called 'any', which means all types are allowed:</p>
-      <div class="code">
+      <code>
         <p>
           let x: any;<br><br>
           // All valid<br>
@@ -125,8 +125,10 @@
           // Erroneous statement that is still valid<br>
           x[1] = 1;
         </p>
-      </div>
-      <h3>The 'unknown' Type</h3>
+      </code>
+    </div>
+    <h3>The 'unknown' Type</h3>
+    <div class="card">
       <p>
         TypeScript adds a type called 'unknown', which is similar to 'any', 
         but is more restricted in the operations that are allowed. The only operators allowed are: 
@@ -173,7 +175,9 @@
           </p>
         </div>
       </code>
-      <h3>The 'never' Type</h3>
+    </div>
+    <h3>The 'never' Type</h3>
+    <div class="card">
       <p>TypeScript adds a type called 'never', which means the type should never happen:</p>
       <code>
         <p>
@@ -197,8 +201,10 @@
             }
         </p>
       </code>
-      <p>If you try to run a Car of any other type through the switch statement, it will give you a compiler error.</p>
-      <h3>The 'void' Type</h3>
+    </div>
+    <p>If you try to run a Car of any other type through the switch statement, it will give you a compiler error.</p>
+    <h3>The 'void' Type</h3>
+    <div class="card">
       <p>
         TypeScript adds a type called 'void', which is for functions that return 
         undefined, or have no return:
@@ -210,13 +216,34 @@
           </p>
         </code>
       </p>
-      <code>
-        
-      </code>
     </div>
   </section>
   <section>
     <h2>Making Your Own Types</h2>
+    <p>TypeScript enables you to create your own types through two means: unions, and generics.</p>
+    <h3>Unions</h3>
+    <div class="card">
+      <p>With unions, you list the possible values:</p>
+      <code>
+        type PrimeNumbersUnderTen = 1 | 3 | 5 | 7;<br>
+        type DoorState = "open" | "closed";
+      </code>
+    </div>
+    <h3>Generics</h3>
+    <div class="card">
+      <p>You can use generics with existing types:</p>
+      <code>
+        type StringArr = Array&lt;string&gt;;<br>
+      </code>
+      <p>Or, you can make your own!</p>
+      <code>
+        interface Store&lt;Type&gt; {<br>
+          &emsp;add: (obj: Type) =&gt; void;<br>
+          &emsp;remove: (obj: Type) =&gt; boolean;<br>
+          &emsp;checkForItem: (obj: Type) =&gt; boolean;<br>
+        }<br>
+      </code>
+    </div>
   </section>
   
 </body>
