@@ -26,10 +26,18 @@ I dislike the idea of using strict mode as the tutorials suggest, because I thin
 
 No issues learning about TypeScript; the tutorials are pretty straight-forward. I wish the zyBooks were as straight-forward and short with just the information you need to know, but I understand that they need some amount of making sure that people aren't just clicking through and not learning anything.
 
+### Week 2
+I spent 3 hours trying to make a Github Action to compile the TypeScript so it would work on the published 'Github Pages' page, but I couldn't figure it out... so I fell back on your example, just requiring it to be compiled locally instead. I also used your npm setup for compilation and testing.
+
+Once I gave up on the Github Action, writing my own TypeScript function was easy. I made it so that if you click on the h1, the background color changes to a random color.
+
+Then I mostly finished the CSS. I started with some old CSS I had laying around, and modified it to fit this project. 
+
 ## Known issues or Bugs
 
-none
+Page width is not right.
 
 ## Sources used
 
-The tutorials linked in the assignment.
+ - The tutorials linked in the assignment.
+ - [Random Hex Value](https://www.tutorialspoint.com/random-color-generator-in-javascript)
