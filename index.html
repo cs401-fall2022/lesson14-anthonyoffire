@@ -11,9 +11,13 @@
   
 </head>
 
-<body>
+<body id="demo">
+  <script type="module">
+    import {randomBackground} from '/build/app.js'
+    window.randomBackground = randomBackground;
+  </script>
   <nav></nav>
-  <h1>TypeScript Tutorial</h1>
+  <h1 onclick="randomBackground()">TypeScript Tutorial</h1>
   <section id="intro">
     <h2>Introduction</h2>
     <p>
@@ -249,3 +253,4 @@
 </body>
 
 </html>
+
