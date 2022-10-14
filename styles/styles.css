@@ -17,6 +17,10 @@ body, h1, h2, h3, h4, a, ul, li{
     padding: 0;
     margin: 0;
     width: 100%;
+    
+}
+body{
+    background-color: var(--bg2);
 }
 ul{
     position: relative;
@@ -25,8 +29,8 @@ ul{
 }
 main{
     background-color: var(--bg2);
-    padding: 20px;
-    width: 100%;
+    padding: 5%;
+    width: 90%;
 }
 code{
     display: block;
@@ -53,20 +57,27 @@ h2{
 }
 h3{
     color: var(--font2);
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
+#intro p{
+    margin-bottom: 25px;
+}
 .card{
+    left: 10%;
+    width: 80%;
     background-color: var(--bg1);
     border-radius: 5px;
-    overflow: hidden;
     padding: 10px;
     position: relative;
-    flex: 0 0 210px;
     margin: 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 .card:hover{
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+h1:hover{
+    box-shadow: inset -1px 1px 6px rgba(0,0,0,.2);
+    cursor: pointer;
 }
 
