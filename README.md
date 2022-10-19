@@ -10,6 +10,9 @@
  - Added a nodeJS setup for TypeScript and Jest
  - Wrote a little TS
    
+### Week 3
+ - Finished CSS
+ - Added clickable example to page, re-linked TS to the example.
+ - Added TS logo
 
-## TODO
- - fix page width
+

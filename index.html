@@ -16,7 +16,11 @@
     import {randomBackground} from '/build/app.js'
     window.randomBackground = randomBackground;
   </script>
-  <h1 onclick="randomBackground()">TypeScript Tutorial</h1>
+  
+  <h1>
+    <img src="ts-logo-128.png" alt="ts logo" id="logo">
+    <span>TypeScript Tutorial</span>
+  </h1>
   <main id="demo">
     
     <section id="intro">
@@ -246,6 +250,28 @@
             &emsp;add: (obj: Type) =&gt; void;<br>
             &emsp;remove: (obj: Type) =&gt; boolean;<br>
             &emsp;checkForItem: (obj: Type) =&gt; boolean;<br>
+          }<br>
+        </code>
+      </div>
+    </section>
+    <section>
+      <h2>Example</h2>
+      
+      <div class="card">
+        <p>This TypeScript is implemented in this page. Click to watch it in action!</p>
+        <code onclick="randomBackground()" id="exampleclick">
+          function randomBackground(){<br>
+          &emsp;if(document != null){<br>
+          &emsp;&emsp;let body = document.getElementById("demo");<br>
+          &emsp;&emsp;const hex = "0123456789ABCDEF";<br>
+          &emsp;&emsp;let color = "";<br>
+          &emsp;&emsp;for(let i=0; i&lt;6; i++)<br>
+          &emsp;&emsp;&emsp;color += hex[Math.floor(Math.random()*16)];<br>
+          &emsp;&emsp;if(parseInt(color) % 4 == 0)<br>
+          &emsp;&emsp;&emsp;body.style.backgroundColor = "#f2f2e5";<br>
+          &emsp;&emsp;else<br>
+          &emsp;&emsp;&emsp;body.style.backgroundColor = "#" + color;<br>
+          &emsp;}<br>
           }<br>
         </code>
       </div>

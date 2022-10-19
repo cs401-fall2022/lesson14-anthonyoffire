@@ -33,9 +33,11 @@ Once I gave up on the Github Action, writing my own TypeScript function was easy
 
 Then I mostly finished the CSS. I started with some old CSS I had laying around, and modified it to fit this project. 
 
+### Week 3
+
 ## Known issues or Bugs
 
-Page width is not right.
+none
 
 ## Sources used
 
