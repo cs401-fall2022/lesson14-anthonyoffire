@@ -16,7 +16,7 @@ body, h1, h2, h3, h4, a, ul, li{
     text-decoration: none;
     padding: 0;
     margin: 0;
-    /* width: 100%; */
+    width: 96%;
     
     
 }
@@ -30,7 +30,7 @@ section{
     left:10%
 }
 body{
-    background-color: var(#000111);
+    background-color: var(--bg2);
 }
 ul{
     position: relative;
@@ -40,7 +40,7 @@ ul{
 main{
     background-color: var(--bg2);
     padding: 5%;
-    /*width: 90%;*/
+    width: 90%;
 }
 code{
     display: block;
@@ -53,7 +53,7 @@ code{
 h1{ 
     font-size: 1.5rem;
     background-color: var(--bg1);
-    /* width: 100%; */
+    width: 100%;
     font-weight: bold;
     text-transform: uppercase;
     padding: 1rem 1rem .5rem 1rem;
