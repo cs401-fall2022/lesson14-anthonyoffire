@@ -34,10 +34,19 @@ Once I gave up on the Github Action, writing my own TypeScript function was easy
 Then I mostly finished the CSS. I started with some old CSS I had laying around, and modified it to fit this project. 
 
 ### Week 3
+I spent several hours trying to fix the display width. It "appears" fixed, but it's still not right. I detail this in the Issues section below.
+
+Besides that I didn't leave much to do this week, as I mostly got it done in the previous two weeks.
+
+I thought the project was easy-ish, if a little confusing about what exactly we're supposed to produce or what the expectations are.
 
 ## Known issues or Bugs
 
-none
+My HTML tag width does not match my Body tag width, and I couldn't figure out how to make them the same. I set body to width: 100%, but then I had a horizontal scroll bar and still have a vertical bar-shaped section on the right side of the page that is covered by the html tag, but not the body tag. I messed around with it for hours, googled a couple things, but nothing I found online worked either.
+
+This vertical bar can be seen by clicking on the last 'Example' card's code section, which changes the body's background color.
+
+I was able to get the h1 section to cover most of the page, but if I widen the body it just gives me that horizontal scroll bar again.
 
 ## Sources used
 

@@ -14,5 +14,18 @@
  - Finished CSS
  - Added clickable example to page, re-linked TS to the example.
  - Added TS logo
+ - Uploaded built JS file to get TS to "work" online
+  
+## How To Use
+
+to build from this dir:
+```
+npm run compile
+```
+
+to run tests:
+```
+npm test
+```
 
 
